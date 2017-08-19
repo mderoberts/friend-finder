@@ -3,10 +3,11 @@
 <head>
     <title>Friend Finder</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<title>Friend Finder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -26,119 +27,142 @@
 
 		<h3><strong>Question 1</strong></h3>
 		<h4>Food is your greatest passion.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q1" style="display: none;">
-	 		<option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-      	</select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q1_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+	 	<div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle, question" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select an Option</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" value="1">1</a>
+                <a class="dropdown-item" value="2">2</a>
+                <a class="dropdown-item" value="3">3</a>
+                <a class="dropdown-item" value="4">4</a>
+                <a class="dropdown-item" value="5">5</a>
+            </div>
+        </div>
+        <br>
 
 		<h3><strong>Question 2</strong></h3>
 		<h4>You enjoy eating at restaurants more than cooking.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q2" style="display: none;">
-	 		<option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-      	</select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q2_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
-
+	 	<div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle, question" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select an Option</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" value="1">1</a>
+                <a class="dropdown-item" value="2">2</a>
+                <a class="dropdown-item" value="3">3</a>
+                <a class="dropdown-item" value="4">4</a>
+                <a class="dropdown-item" value="5">5</a>
+            </div>
+        </div>
+        <br>
 
 		<h3><strong>Question 3</strong></h3>
 		<h4>You take photos of all your meals – and enjoy it as much as eating it.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q3" style="display: none;">
-	 		<option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-      	</select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q3_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
-
+	 	<div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle, question" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select an Option</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" value="1">1</a>
+                <a class="dropdown-item" value="2">2</a>
+                <a class="dropdown-item" value="3">3</a>
+                <a class="dropdown-item" value="4">4</a>
+                <a class="dropdown-item" value="5">5</a>
+            </div>
+        </div>
+        <br>
 
 		<h3><strong>Question 4</strong></h3>
 		<h4>You prefer foods eaten with your hands rather than using utensils.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q4" style="display: none;">
-	 		<option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-      	</select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q4_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
-
+	 	<div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle, question" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select an Option</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" value="1">1</a>
+                <a class="dropdown-item" value="2">2</a>
+                <a class="dropdown-item" value="3">3</a>
+                <a class="dropdown-item" value="4">4</a>
+                <a class="dropdown-item" value="5">5</a>
+            </div>
+        </div>
+        <br>
 
 		<h3><strong>Question 5</strong></h3>
 		<h4>You enjoy spicy foods – really spicy.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q5" style="display: none;">
-	 		<option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-      	</select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q5_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
-
+	 	<div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle, question" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select an Option</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" value="1">1</a>
+                <a class="dropdown-item" value="2">2</a>
+                <a class="dropdown-item" value="3">3</a>
+                <a class="dropdown-item" value="4">4</a>
+                <a class="dropdown-item" value="5">5</a>
+            </div>
+        </div>
+        <br>
 
 		<h3><strong>Question 6</strong></h3>
 		<h4>You always strive to eat new foods, whether eating out or cooking at home.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q6" style="display: none;">
-	 		<option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-      	</select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q6_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
-
+	 	<div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle, question" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select an Option</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" value="1">1</a>
+                <a class="dropdown-item" value="2">2</a>
+                <a class="dropdown-item" value="3">3</a>
+                <a class="dropdown-item" value="4">4</a>
+                <a class="dropdown-item" value="5">5</a>
+            </div>
+        </div>
+        <br>
 
 		<h3><strong>Question 7</strong></h3>
 		<h4>You eat at least three meals a day.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q7" style="display: none;">
-	 		<option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-      	</select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q7_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+	 	<div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle, question" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select an Option</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" value="1">1</a>
+                <a class="dropdown-item" value="2">2</a>
+                <a class="dropdown-item" value="3">3</a>
+                <a class="dropdown-item" value="4">4</a>
+                <a class="dropdown-item" value="5">5</a>
+            </div>
+        </div>
+        <br>
 
-		<h3><strong>Question 8</strong></h3>
+        <h3><strong>Question 8</strong></h3>
 		<h4>You pair beverages with your meals for maximum enjoyment.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q8" style="display: none;">
-	 		<option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-      	</select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q8_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+	 	<div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle, question" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select an Option</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" value="1">1</a>
+                <a class="dropdown-item" value="2">2</a>
+                <a class="dropdown-item" value="3">3</a>
+                <a class="dropdown-item" value="4">4</a>
+                <a class="dropdown-item" value="5">5</a>
+            </div>
+        </div>
+        <br>
 
-		<h3><strong>Question 9</strong></h3>
+        <h3><strong>Question 9</strong></h3>
 		<h4>You have food sensitivities.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q9" style="display: none;">
-	 		<option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-      	</select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q9_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+	 	<div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle, question" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select an Option</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" value="1">1</a>
+                <a class="dropdown-item" value="2">2</a>
+                <a class="dropdown-item" value="3">3</a>
+                <a class="dropdown-item" value="4">4</a>
+                <a class="dropdown-item" value="5">5</a>
+            </div>
+        </div>
+        <br>
 
-		<h3><strong>Question 10</strong></h3>
+        <h3><strong>Question 10</strong></h3>
 		<h4>Sunday brunch is the best meal of the week.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q10" style="display: none;">
-	 		<option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-      	</select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q10_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
-
+	 	<div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle, question" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select an Option</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" value="1">1</a>
+                <a class="dropdown-item" value="2">2</a>
+                <a class="dropdown-item" value="3">3</a>
+                <a class="dropdown-item" value="4">4</a>
+                <a class="dropdown-item" value="5">5</a>
+            </div>
+        </div>
 		<br>
 		<br>
 
@@ -147,10 +171,38 @@
 
 	</div>
 
-	<!-- Modal -->
+	<!-- Modal code goes here-->
 
-  <script type="text/javascript">
-  </script>
+<script>
+    $(".dropdown-item").on("click", function() {
+        console.log($(this).text());
+        $(this).parents(".dropdown").find('.btn').html($(this).text());
+        $(this).parents(".dropdown").find('.btn').val($(this).data('value'));
+    });
+
+    $("#submit").on("click", function(event) {
+      event.preventDefault();
+      var name = $("#name").val().trim();
+      var photo = $("#photo").val().trim();
+      var scores = [];
+      $('.question').each(function() {
+          if($(this).text() === "Select an Option") {
+              scores.push("0");
+          }
+          else{
+            scores.push($(this).text());
+          }
+      });
+      console.log(scores);      
+      
+    //   var newFriend = {
+    //       name: ,
+    //       photo: ,
+    //       scores: []
+    //   }
+    
+    });
+</script>
 
 
 </body>
