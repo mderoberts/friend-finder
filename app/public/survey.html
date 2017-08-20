@@ -171,7 +171,29 @@
 
 	</div>
 
-	<!-- Modal code goes here-->
+	<!-- Modal-->
+
+    <div class="modal fade" id="myModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Best Match</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <hr>
+        <div class="modal-body">
+            <p id="match-name"></p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+    </div>   
+
+<!--Javascript  -->
 
 <script>
     $(".dropdown-item").on("click", function() {
@@ -182,25 +204,26 @@
 
     $("#submit").on("click", function(event) {
       event.preventDefault();
-      var name = $("#name").val().trim();
-      var photo = $("#photo").val().trim();
-      var scores = [];
+
+      var newFriend = {
+       name: $("#name").val().trim(),
+       photo: $("#photo").val().trim(),
+       scores: [],
+      };
       $('.question').each(function() {
-          if($(this).text() === "Select an Option") {
-              scores.push("0");
-          }
-          else{
-            scores.push($(this).text());
-          }
-      });
-      console.log(scores);      
-      
-    //   var newFriend = {
-    //       name: ,
-    //       photo: ,
-    //       scores: []
-    //   }
-    
+        if($(this).text() === "Select an Option") {
+            newFriend.scores.push("0");
+        }
+        else {
+        newFriend.scores.push($(this).text());
+        }
+        });  
+        console.log(newFriend);      
+        $.post("/api/friends", newFriend, function(data) {
+            if(data) {
+                $('#myModal').modal(show);
+            }
+        })
     });
 </script>
 
